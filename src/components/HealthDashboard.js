@@ -16,7 +16,6 @@ import {
   Chip,
   Alert,
   CircularProgress,
-  Divider,
   Button,
   TextField,
   FormControl,
@@ -30,11 +29,8 @@ import {
   FitnessCenter,
   Restaurant,
   Hotel,
-  Warning,
   CheckCircle,
   Timeline,
-  BarChart,
-  PieChart,
   Add,
   Save,
   Person,
@@ -210,12 +206,6 @@ const HealthDashboard = () => {
       setHealthRisk(JSON.parse(savedRisk));
     }
   }, []);
-
-  const getHealthScoreColor = (score) => {
-    if (score >= 80) return 'success.main';
-    if (score >= 60) return 'warning.main';
-    return 'error.main';
-  };
 
   const generateWeeklyData = () => {
     const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
