@@ -2,7 +2,7 @@
   "name": "blooming-health-tracker",
   "version": "1.0.0",
   "description": "AI-Powered Health Tracking Application for GitHub Pages",
-  "homepage": "https://yourusername.github.io/blooming-health",
+  "homepage": "https://TushXDev.github.io/blooming_health",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
