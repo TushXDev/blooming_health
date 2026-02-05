@@ -171,10 +171,12 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 📞 Contact
 
-Created by [Your Name] - feel free to contact me!
+Created by Tushar Kumar- feel free to contact me!
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
+- GitHub:@tushxdev
+- https://github.com/tushxdev
+- LinkedIn: TushXDev
+  https://linkedin.com/in/TushXDev
 
 ---
 
