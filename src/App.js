@@ -6,13 +6,13 @@ import HealthDashboard from './components/HealthDashboard';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#667eea',
+      main: '#d5d9e8',
     },
     secondary: {
-      main: '#764ba2',
+      main: '#48ead7',
     },
     background: {
-      default: '#f5f5f5',
+      default: '#d83232',
     },
   },
   typography: {

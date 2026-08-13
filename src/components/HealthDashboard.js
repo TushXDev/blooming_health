@@ -171,7 +171,7 @@ const HealthDashboard = () => {
     
     if (bmi > 25) recommendations.push("Consider a balanced diet with reduced calorie intake");
     if (bmi < 18.5) recommendations.push("Focus on healthy weight gain with nutritious foods");
-    if (healthData.exercise < 150) recommendations.push("Increase physical activity to 150+ minutes per week");
+    if (healthData.exercise < 120) recommendations.push("Increase physical activity to 120+ minutes per week");
     if (healthData.sleep < 7) recommendations.push("Prioritize 7-9 hours of quality sleep nightly");
     if (age > 40) recommendations.push("Regular health check-ups become increasingly important");
     if (riskLevel === 'High') recommendations.push("Consult with healthcare professionals for personalized guidance");
@@ -187,7 +187,7 @@ const HealthDashboard = () => {
     localStorage.setItem('healthData', JSON.stringify(healthData));
     localStorage.setItem('userProfile', JSON.stringify(userProfile));
     localStorage.setItem('healthRisk', JSON.stringify(healthRisk));
-    alert('✅ Health data saved successfully!');
+    alert(' Health data saved successfully!');
   };
 
   useEffect(() => {
@@ -231,7 +231,7 @@ const HealthDashboard = () => {
           WebkitTextFillColor: 'transparent',
           fontWeight: 'bold'
         }}>
-          🌸 Blooming Health
+          Blooming Health
         </Typography>
         <Typography variant="h5" color="textSecondary" sx={{ mb: 2 }}>
           AI-Powered Personal Health Management
@@ -252,7 +252,7 @@ const HealthDashboard = () => {
           icon={<Favorite />}
         >
           <Typography variant="h6">
-            🎯 AI Health Assessment: {healthRisk.risk_level} Risk Level
+             AI Health Assessment: {healthRisk.risk_level} Risk Level
           </Typography>
           <Typography variant="body2" sx={{ mb: 1 }}>
             <strong>Risk Score:</strong> {(healthRisk.risk_score * 100).toFixed(1)}% | 
@@ -263,7 +263,7 @@ const HealthDashboard = () => {
             <strong> Age Factor:</strong> {healthRisk.age_factor}
           </Typography>
           <Typography variant="body2">
-            💡 <strong>Recommendations:</strong> {healthRisk.recommendations}
+             <strong>Recommendations:</strong> {healthRisk.recommendations}
           </Typography>
         </Alert>
       )}
@@ -684,7 +684,7 @@ const HealthDashboard = () => {
                       </Alert>
                       <Box sx={{ mb: 2 }}>
                         <Typography variant="body2" sx={{ mb: 1 }}>
-                          <strong>🎯 Risk Score:</strong> {(healthRisk.risk_score * 100).toFixed(1)}%
+                          <strong> Risk Score:</strong> {(healthRisk.risk_score * 100).toFixed(1)}%
                         </Typography>
                         <LinearProgress 
                           variant="determinate" 
@@ -694,7 +694,7 @@ const HealthDashboard = () => {
                       </Box>
                       <Box sx={{ mb: 2 }}>
                         <Typography variant="body2" sx={{ mb: 1 }}>
-                          <strong>💪 Wellness Score:</strong> {(healthRisk.wellness_score * 100).toFixed(1)}%
+                          <strong> Wellness Score:</strong> {(healthRisk.wellness_score * 100).toFixed(1)}%
                         </Typography>
                         <LinearProgress 
                           variant="determinate" 
@@ -703,10 +703,10 @@ const HealthDashboard = () => {
                         />
                       </Box>
                       <Typography variant="body2" sx={{ mb: 1 }}>
-                        <strong>📊 BMI Category:</strong> {healthRisk.bmi_category}
+                        <strong>BMI Category:</strong> {healthRisk.bmi_category}
                       </Typography>
                       <Typography variant="body2">
-                        <strong>🎂 Age Factor:</strong> {healthRisk.age_factor} Risk
+                        <strong> Age Factor:</strong> {healthRisk.age_factor} Risk
                       </Typography>
                     </Box>
                   ) : (
@@ -738,16 +738,16 @@ const HealthDashboard = () => {
                   {healthRisk?.recommendations ? (
                     <Box>
                       <Typography variant="body1" sx={{ mb: 3, p: 2, bgcolor: 'grey.50', borderRadius: 1 }}>
-                        💡 {healthRisk.recommendations}
+                         {healthRisk.recommendations}
                       </Typography>
                       <Box>
                         <Typography variant="subtitle2" gutterBottom>Quick Action Items:</Typography>
                         <Box sx={{ mt: 2 }}>
-                          <Chip label="🏃‍♀️ Daily Exercise" color="primary" sx={{ mr: 1, mb: 1 }} />
-                          <Chip label="🥗 Balanced Nutrition" color="secondary" sx={{ mr: 1, mb: 1 }} />
-                          <Chip label="😴 Quality Sleep" color="success" sx={{ mr: 1, mb: 1 }} />
-                          <Chip label="💧 Stay Hydrated" color="info" sx={{ mr: 1, mb: 1 }} />
-                          <Chip label="🧘‍♀️ Stress Management" color="warning" sx={{ mr: 1, mb: 1 }} />
+                          <Chip label=" Daily Exercise" color="primary" sx={{ mr: 1, mb: 1 }} />
+                          <Chip label=" Balanced Nutrition" color="secondary" sx={{ mr: 1, mb: 1 }} />
+                          <Chip label="Quality Sleep" color="success" sx={{ mr: 1, mb: 1 }} />
+                          <Chip label=" Stay Hydrated" color="info" sx={{ mr: 1, mb: 1 }} />
+                          <Chip label=" Stress Management" color="warning" sx={{ mr: 1, mb: 1 }} />
                         </Box>
                       </Box>
                     </Box>
