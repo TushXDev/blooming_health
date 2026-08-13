@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/blooming_health/static/css/main.f080797b.css",
-    "main.js": "/blooming_health/static/js/main.eed76005.js",
+    "main.css": "/blooming_health/static/css/main.34caff77.css",
+    "main.js": "/blooming_health/static/js/main.c287e6e8.js",
     "index.html": "/blooming_health/index.html",
-    "main.f080797b.css.map": "/blooming_health/static/css/main.f080797b.css.map",
-    "main.eed76005.js.map": "/blooming_health/static/js/main.eed76005.js.map"
+    "main.34caff77.css.map": "/blooming_health/static/css/main.34caff77.css.map",
+    "main.c287e6e8.js.map": "/blooming_health/static/js/main.c287e6e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f080797b.css",
-    "static/js/main.eed76005.js"
+    "static/css/main.34caff77.css",
+    "static/js/main.c287e6e8.js"
   ]
 }
